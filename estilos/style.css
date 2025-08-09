@@ -149,14 +149,12 @@ p.strong {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5em;
-    text-align: left;
     margin-bottom: 20px;
 }
 
 /* Texto fraco */
 p.weak {
     font-size: 14px;
-    text-align: justify;
 }
 
 /* Cores fracas no texto de cada card */
