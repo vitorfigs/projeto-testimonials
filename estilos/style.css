@@ -44,12 +44,12 @@ body {
     font-family: 'Barlow Semi Condensed', 'Barlow', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(
         45deg,
-        var(--Purple50),
-        var(--Gray100),
-        var(--Purple200)
+        var(--Purple300),
+        var(--Gray200),
+        var(--Purple50)
     );
     background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
+    animation: gradientMove 8s ease-in-out infinite;
 }
 
 @keyframes gradientMove {

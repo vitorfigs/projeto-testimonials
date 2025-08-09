@@ -2,6 +2,15 @@
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     
+    body {
+    background: linear-gradient(
+        45deg,
+        var(--Purple200),
+        var(--Gray200),
+        var(--Purple50)
+    );
+    animation: gradientMove 12s ease-in-out infinite;
+}
 
     section {
         display: grid;
@@ -30,10 +39,15 @@
 
 @media screen and (min-width: 1440px) {
     
-
-    main {
-        height: 100vh;
-    }
+    body {
+    background: linear-gradient(
+        45deg,
+        var(--Purple200),
+        var(--Gray200),
+        var(--Purple50)
+    );
+    animation: gradientMove 16s ease infinite;
+}
 
     section {
         display: grid;
