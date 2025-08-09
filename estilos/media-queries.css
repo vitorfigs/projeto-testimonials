@@ -1,6 +1,6 @@
-/* ======TABLETS====== */
+/* ======TABLETS/LAPTOPS====== */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     body {
     background-image: linear-gradient(to right, 
         var(--White) 0%, 
@@ -34,7 +34,7 @@
 
 /* ======DESKTOPS====== */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     body {
     background-image: linear-gradient(to right, 
         var(--White) 0%, 

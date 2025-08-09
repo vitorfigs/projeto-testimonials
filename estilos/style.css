@@ -61,6 +61,20 @@ article {
     line-height: 1.3em;
     max-width: 450px;
     margin: auto;
+    transition: transform .3s ease, box-shadow .3s ease;
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    80% { opacity: 1; transform: translateY(-2px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Personalização de cada card */
@@ -91,23 +105,23 @@ article#kira {
 
 /* Bordas das fotos em cada card */
 
-article#daniel img {
+#daniel img {
     border: 2px solid var(--Purple300);
 }
 
-article#jonathan img {
+#jonathan img {
     border: 2px solid var(--Gray200);
 }
 
-article#jeanette img {
+#jeanette img {
     border: 2px solid var(--Purple50);
 }
 
-article#patrick img {
+#patrick img {
     border: 2px solid var(--Purple500);
 }
 
-article#kira img {
+#kira img {
     border: 2px solid var(--Purple50);
 }
 
@@ -159,22 +173,22 @@ p.weak {
 
 /* Cores fracas no texto de cada card */
 
-article#daniel h3, article#daniel p.weak {
+#daniel h3, #daniel p.weak {
     color: var(--Purple50);
 }
 
-article#jonathan h2, article#jonathan h3, article#jonathan p.weak {
+#jonathan h2, #jonathan h3, #jonathan p.weak {
     color: var(--Gray100);
 }
 
-article#jeanette h3, article#jeanette p.weak {
+#jeanette h3, #jeanette p.weak {
     color: var(--Black);
 }
 
-article#patrick h3, article#patrick p.weak {
+#patrick h3, #patrick p.weak {
     color: var(--Gray200);
 }
 
-article#kira h3, article#kira p.weak {
+#kira h3, #kira p.weak {
     color: var(--Black);
 }
