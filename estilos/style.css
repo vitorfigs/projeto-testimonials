@@ -40,6 +40,7 @@
    ============================== */
 body {
     font-family: 'Barlow Semi Condensed', 'Barlow', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, var(--Gray100), var(--Gray200));
 }
 
 /* ==============================
@@ -59,12 +60,12 @@ section {
 article {
     border-radius: 8px;
     padding: 30px;
-    line-height: 1.25em;
-    max-width: 500px;
+    line-height: 1.3em;
+    max-width: 450px;
     margin: auto;
 }
 
-/* Borda específica em cada foto */
+/* Personalização de cada card */
 
 article#daniel {
     background-color: var(--Purple500);
@@ -75,13 +76,41 @@ article#jonathan {
     color: var(--White);
 }
 
+article#jeanette {
+    background-color: var(--White);
+    color: var(--Gray500);
+}
+
+article#patrick {
+    background-color: var(--Darkblue);
+    color: var(--Gray200);
+}
+
+article#kira {
+    background-color: var(--White);
+    color: var(--Gray500);
+}
+
 /* Bordas das fotos em cada card */
 
 article#daniel img {
     border: 2px solid var(--Purple300);
 }
+
 article#jonathan img {
     border: 2px solid var(--Gray200);
+}
+
+article#jeanette img {
+    border: 2px solid var(--Purple50);
+}
+
+article#patrick img {
+    border: 2px solid var(--Purple500);
+}
+
+article#kira img {
+    border: 2px solid var(--Purple50);
 }
 
 /* ==============================
@@ -122,7 +151,6 @@ p.strong {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5em;
-  
     text-align: left;
     margin-bottom: 20px;
 }
@@ -130,6 +158,5 @@ p.strong {
 /* Texto fraco */
 p.weak {
     font-size: 14px;
-   
     text-align: justify;
 }
