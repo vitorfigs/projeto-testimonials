@@ -11,8 +11,9 @@
 :root {
     /* Roxos */
     --Purple50:  #eee5ffff;
-    --Purple300: #c4a2f6ff;
-    --Purple500: #7541c8ff;
+    --Purple200: #e1cefd;;
+    --Purple300: #c4a2f6;
+    --Purple500: #7440c7;
 
     /* Neutras */
     --White:     #ffffffff;
@@ -41,13 +42,26 @@
 
 body {
     font-family: 'Barlow Semi Condensed', 'Barlow', 'Arial Narrow', Arial, sans-serif;
-    background-image: linear-gradient(to right, var(--Gray100), var(--Gray200));
+    background: linear-gradient(
+        45deg,
+        var(--Purple50),
+        var(--Gray100),
+        var(--Purple200)
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 section {
     display: grid;
     grid-template-columns: 1fr; /* Uma coluna - Mobile First */
-    gap: 40px;
+    gap: 50px;
     padding: 40px;
 }
 
@@ -61,20 +75,13 @@ article {
     line-height: 1.3em;
     max-width: 450px;
     margin: auto;
+
     transition: transform .3s ease, box-shadow .3s ease;
-    animation: fadeUp 1s ease forwards;
-    opacity: 0;
 }
 
 article:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(15px); }
-    80% { opacity: 1; transform: translateY(-2px); }
-    100% { opacity: 1; transform: translateY(0); }
+    transform: scale(1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Personalização de cada card */
@@ -139,6 +146,11 @@ article#kira {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    transition: transform .3s ease;
+}
+
+.photo img:hover{
+    transform: scale(1.25) rotate(3deg);
 }
 
 /* ==============================

@@ -1,13 +1,7 @@
 /* ======TABLETS/LAPTOPS====== */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-    body {
-    background-image: linear-gradient(to right, 
-        var(--White) 0%, 
-        var(--Gray200) 50%, 
-        var(--White) 100%
-        );
-    }
+    
 
     section {
         display: grid;
@@ -35,17 +29,16 @@
 /* ======DESKTOPS====== */
 
 @media screen and (min-width: 1440px) {
-    body {
-    background-image: linear-gradient(to right, 
-        var(--White) 0%, 
-        var(--Gray200) 50%, 
-        var(--White) 100%
-        );
+    
+
+    main {
+        height: 100vh;
     }
+
     section {
         display: grid;
         grid-template: repeat(2, auto) / repeat(4, 1fr);
-        gap: 30px;
+        gap: 25px;
 
         width: 80%;
         max-width: 1200px;
