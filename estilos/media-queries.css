@@ -9,7 +9,7 @@
         var(--Gray200),
         var(--Purple50)
     );
-    animation: gradientMove 12s ease-in-out infinite;
+    animation-duration: 12s;
 }
 
     section {
