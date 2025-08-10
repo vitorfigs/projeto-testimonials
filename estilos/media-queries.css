@@ -47,10 +47,6 @@
         var(--Purple50)
     );
     animation: gradientMove 16s ease infinite;
-}
-
-    main {
-        height: 100vh;
     }
 
     section {
