@@ -49,6 +49,10 @@
     animation: gradientMove 16s ease infinite;
 }
 
+    main {
+        height: 100vh;
+    }
+
     section {
         display: grid;
         grid-template: repeat(2, auto) / repeat(4, 1fr);
