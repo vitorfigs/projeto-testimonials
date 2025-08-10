@@ -40,7 +40,7 @@
    LAYOUT
    ============================== */
 
-body {
+html {
     font-family: 'Barlow Semi Condensed', 'Barlow', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(
         45deg,
