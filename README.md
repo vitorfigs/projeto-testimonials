@@ -1,2 +1,3 @@
 # projeto-testimonials
-Praticar grid com uma grade de depoimentos fictícios
+Pra testar grid com uma grade de depoimentos fictícios
+> [link hospedado no pages](https://vitorfigs.github.io/projeto-testimonials/)
